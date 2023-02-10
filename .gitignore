@@ -1,2 +1,2 @@
 node_modules
-database/app.db
+./src/database/app.db
