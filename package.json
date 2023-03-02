@@ -9,7 +9,8 @@
     "knex": "node --no-warnings --loader tsx ./node_modules/.bin/knex",
     "migrate:make": "npm run knex -- migrate:make ",
     "migrate:latest": "npm run knex -- migrate:latest",
-    "test": "vitest"
+    "test": "vitest",
+    "build": "tsup src --out-dir build"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +21,7 @@
     "@types/supertest": "^2.0.12",
     "eslint": "^8.33.0",
     "supertest": "^6.3.3",
+    "tsup": "^6.6.3",
     "tsx": "^3.12.3",
     "typescript": "^4.9.5",
     "vitest": "^0.29.1"
